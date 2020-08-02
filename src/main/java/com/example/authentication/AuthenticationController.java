@@ -38,7 +38,7 @@ public class AuthenticationController {
 		
 		String token = Jwts
 				.builder()
-				.setId("softtekJWT")
+				.setId("someID")
 				.setSubject(username)
 				.claim("authorities",
 						grantedAuthorities.stream()
